@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         b站增加1.1倍速
 // @namespace    https://github.com/Penguin-Killer
-// @version      0.1
+// @version      0.2
 // @description  将0.75倍速修改为1.1倍速
 // @author       Penguin-Killer
-// @match        https://www.bilibili.com/video/*
+// @match        *://*.bilibili.com/video/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
 // @grant        none
 // @license      MIT
