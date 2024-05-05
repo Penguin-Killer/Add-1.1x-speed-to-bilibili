@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         b站增加1.1倍速
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/Penguin-Killer
 // @version      0.1
 // @description  将0.75倍速修改为1.1倍速
 // @author       Penguin-Killer
