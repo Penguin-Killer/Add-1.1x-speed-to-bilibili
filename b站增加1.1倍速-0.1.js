@@ -8,7 +8,6 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
 // @grant        none
 // @license      MIT
-//-----测试1---------
 
 // ==/UserScript==
 (function() {
