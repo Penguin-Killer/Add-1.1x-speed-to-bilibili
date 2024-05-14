@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         b站增加1.1倍速
 // @namespace    https://github.com/Penguin-Killer
-// @version      0.2.2
+// @version      0.2.3
 // @description  将0.75倍速修改为1.1倍速
 // @author       Penguin-Killer
 // @match        *://*.bilibili.com/video/*
@@ -9,13 +9,14 @@
 // @grant        none
 // @license      MIT
 
+// ==/UserScript==
+
 /*
 ***********************************************************
 如果不想自动使用1.1倍速，可以将第30行 “element.click();” 注释掉
 ***********************************************************
 */
 
-// ==/UserScript==
 (function() {
     'use strict';
 
