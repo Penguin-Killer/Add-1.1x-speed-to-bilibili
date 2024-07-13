@@ -22,7 +22,6 @@
     'use strict';
 
     function modifyPlaybackSpeedOption() {
-        //var element = document.querySelector("#bilibili-player > div > div > div.bpx-player-primary-area > div.bpx-player-video-area > div.bpx-player-control-wrap > div.bpx-player-control-entity > div.bpx-player-control-bottom > div.bpx-player-control-bottom-right > div.bpx-player-ctrl-btn.bpx-player-ctrl-playbackrate > ul > li:nth-child(5)");
         var element = document.querySelector('.bpx-player-ctrl-playbackrate-menu-item[data-value="0.75"]');
         if (element) {
             element.textContent = '1.1x';
