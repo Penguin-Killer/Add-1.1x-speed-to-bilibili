@@ -16,19 +16,19 @@
 
 /*
 ***********************************************************
-如果不想自动使用1.1倍速，可以将第33行 “element.click();” 注释掉
+如果不想自动使用1.1倍速，可以将第30行 “element.click();” 注释掉
 ***********************************************************
 */
 
 (function() {
     'use strict';
 
-    function checkAndModifyElement() {
+function checkAndModifyElement() {
     var element = document.querySelector('.bpx-player-ctrl-playbackrate-menu-item[data-value="0.75"]');
     if (element) {
         element.textContent = '1.1x';
         element.setAttribute('data-value', '1.1');
-        console.log('1.1倍速修改成功！任务退出');
+        console.log('1.1倍速修改成功！');
         // 触发点击事件
         element.click();
         return true; // 找到并修改元素，返回 true 以退出循环
@@ -39,9 +39,15 @@
 }
 
 function startChecking() {
+    let attempts = 0;
+    const maxAttempts = 10;
     let intervalId = setInterval(function() {
-        if (checkAndModifyElement()) {
-            clearInterval(intervalId); // 找到并修改元素后清除定时器
+        attempts++;
+        if (checkAndModifyElement() || attempts >= maxAttempts) {
+            clearInterval(intervalId); // 找到并修改元素或达到最大尝试次数后清除定时器
+            if (attempts >= maxAttempts) {
+                console.log('达到最大尝试次数，停止检测。');
+            }
         }
     }, 5000); // 每隔5秒检测一次
 }
